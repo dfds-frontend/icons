@@ -1,0 +1,24 @@
+{
+	"name": "@kunukn/dfds-icons",
+	"version": "0.0.14",
+	"description": "dfds icons",
+	"main": "index.js",
+	"files": [
+		"files"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "browser-sync start -s -f='*.*'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kunukn/dfds-icons.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kunukn/dfds-icons/issues"
+	},
+	"homepage": "https://github.com/kunukn/dfds-icons#readme"
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>icons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #333;
+    }
+
+    .root-icons {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .icon-container {
+      display: inline-flex;
+      margin: 0.5rem;
+    }
+
+    .icon {
+      outline: 1px solid gray;
+      fill: purple;
+      color: deeppink;
+      object-fit: cover;
+      background: white;
+    }
+  </style>
+</head>
+
+<body class="dfds-main-icons-manual-load">
+
+  <div class="root-icons"></div>
+
+  <script src="files/main/icons.js"></script>
+  <script>
+    DFDS_icons.load({ callback });
+
+    function callback(ajax) {
+      ajax.status === 200 &&
+        setTimeout(() => {
+          // wait until available in the DOM
+          let svgIcons = document.querySelector(".svg-in-the-dom > svg");
+          apply(svgIcons);
+        }, 0);
+    }
+
+    function apply(svgIcons) {
+      let rootIcons = document.querySelector(".root-icons");
+      let ids = [].slice.call(svgIcons.querySelectorAll("[id]"));
+      let fragment = document.createDocumentFragment();
+      let div;
+      for (let element of ids) {
+        div = document.createElement("div");
+        div.className = "icon-container";
+        let id = element.getAttribute("id");
+        let title = element.querySelector("title") || "";
+        if (title) {
+          title = title.textContent;
+        }
+        let viewBox = element.getAttribute("viewBox");
+        let viewBoxDim = viewBox.split(/\s+|,/);
+        let x = viewBoxDim[2] * 2;
+        let y = viewBoxDim[3] * 2;
+        div.innerHTML = `
+<svg role="img" class="icon" width="${x}" height="${y}">
+  <title>${title}</title>
+  <use xlink:href="#${id}"></use>
+</svg>
+        `;
+        fragment.appendChild(div);
+      }
+
+      rootIcons.appendChild(fragment);
+    }
+  </script>
+
+</body>
+
+</html>
