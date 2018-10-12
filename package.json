@@ -1,7 +1,7 @@
 {
 	"name": "@dfds-frontend/icons",
 	"version": "0.0.1",
-	"description": "dfds icons",
+	"description": "Dfds icons",
 	"main": "index.js",
 	"files": [
 		"main"
@@ -14,7 +14,10 @@
 		"type": "git",
 		"url": "git+https://github.com/dfds-frontend/icons.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"svg",
+		"icons"
+	],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
