@@ -6,7 +6,7 @@ inlude this in html
 
 ```html
 <script
-  src="https://unpkg.com/@kunukn/dfds-icons/files/main/icons.js">
+  src="https://unpkg.com/@dfds-frontend/icons/main/icons.js">
 </script>
 ```
 
@@ -43,39 +43,33 @@ _DFDS_.icons.load({
 
 ## main icons from npm
 
--   npm install @kunukn/dfds-icons
--   the files are in node_modules/@kunukn/dfds-icons/files
+-   npm install @dfds-frontend/icons
+-   the files are in node_modules/@dfds-frontend/icons
 
 inlude this in html
 
 ```html
 <script
-  src="node_modules/@kunukn/dfds-icons/files/main/icons.js">
+  src="node_modules/@dfds-frontend/icons/main/icons.js">
 </script>
 ```
 
 or
 
 ```javascript
-import icons from "@kunukn/dfds-icons";
+import icons from "@dfds-frontend/icons";
 icons.load();
 ```
 
 ## demo
 
--   https://codepen.io/kunukn/full/94325628e7a2c18119cd01df62676ccb Vanilla JS, all icons
--   https://codepen.io/kunukn/pen/e17703413428ee227a748d4d128f4d10 Html
--   https://codesandbox.io/s/lr2ozlllpl Html
--   https://codesandbox.io/s/pyjrr5xz87 React
-
-## url shortened link alternative
-
-```html
-<script src="https://bit.do/dfds-icons"></script>
-```
+-   https://codepen.io/kunukn/full/3284cab7dec4b27b92d895eb61cbbba6 Vanilla JS, all icons
+-   https://codepen.io/kunukn/pen/c7080494f3fbd5b1c387353d81bebb36 Html
+-   https://codesandbox.io/s/935w7p22xy Html
+-   https://codesandbox.io/s/lp8oymr4xq React
 
 ## more
 
 To see all the available CDN files go to
 
-https://unpkg.com/@kunukn/dfds-icons/
+https://unpkg.com/@dfds-frontend/icons/

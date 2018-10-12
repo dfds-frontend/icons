@@ -17,7 +17,7 @@ function load(props) {
     }
     callback && callback(ajax);
   }
-  ajax.open("GET", path || "https://unpkg.com/@kunukn/dfds-icons/files/main/icons.svg", true);
+  ajax.open("GET", path || "https://unpkg.com/@dfds-frontend/icons/main/icons.svg", true);
   ajax.send();
 };
 

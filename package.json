@@ -1,10 +1,10 @@
 {
-	"name": "@kunukn/dfds-icons",
-	"version": "0.0.14",
+	"name": "@dfds-frontend/icons",
+	"version": "0.0.1",
 	"description": "dfds icons",
 	"main": "index.js",
 	"files": [
-		"files"
+		"main"
 	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -12,13 +12,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kunukn/dfds-icons.git"
+		"url": "git+https://github.com/dfds-frontend/icons.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/kunukn/dfds-icons/issues"
+		"url": "https://github.com/dfds-frontend/icons/issues"
 	},
-	"homepage": "https://github.com/kunukn/dfds-icons#readme"
+	"homepage": "https://github.com/dfds-frontend/icons#readme"
 }
