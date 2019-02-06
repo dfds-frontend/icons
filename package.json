@@ -1,6 +1,6 @@
 {
 	"name": "@dfds-frontend/icons",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Dfds icons",
 	"main": "index.js",
 	"files": [

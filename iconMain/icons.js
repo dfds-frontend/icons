@@ -29,7 +29,7 @@ _DFDS_.icons.main = (function () {
   try {
 
     var css = 'dfds-main-icons-manual-load';
-    if (!document.getElementById(id) && !(document.head.classList.contains(css) || document.body.classList.contains(css))) {
+    if (!document.getElementById(id) && !(document.documentElement.classList.contains(css) || document.body.classList.contains(css))) {
       load();
     }
   } catch(err) {}
