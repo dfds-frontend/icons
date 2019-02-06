@@ -8,7 +8,7 @@ inlude this in html
 
 ```html
 <script
-  src="https://unpkg.com/@dfds-frontend/icons/iconCore/icons.js">
+  src="https://unpkg.com/@dfds-frontend/icons/dist/core/icons.js">
 </script>
 ```
 
@@ -52,7 +52,7 @@ inlude this in html
 
 ```html
 <script
-  src="node_modules/@dfds-frontend/icons/iconCore/icons.js">
+  src="node_modules/@dfds-frontend/icons/dist/core/icons.js">
 </script>
 ```
 
