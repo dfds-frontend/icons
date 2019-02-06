@@ -65,6 +65,7 @@ icons.load();
 
 ## demo
 
+-   https://codepen.io/kunukn/full/32d44d925a777a4e0d03887f57cbb410 Vanilla JS, core icons
 -   https://codepen.io/kunukn/full/3284cab7dec4b27b92d895eb61cbbba6 Vanilla JS, all icons
 -   https://codepen.io/kunukn/pen/c7080494f3fbd5b1c387353d81bebb36 Html
 -   https://codesandbox.io/s/935w7p22xy Html
