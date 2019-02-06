@@ -1,5 +1,9 @@
 var _DFDS_ = _DFDS_ || {};
-_DFDS_.icons = (function () {
+_DFDS_.icons = _DFDS_.icons || {};
+
+_DFDS_.icons.main = (function () {
+
+  var id = 'dfds-icons-main-svg-in-the-dom';
 
   function load(props) {
     var path = props && props.path;
@@ -10,7 +14,7 @@ _DFDS_.icons = (function () {
       if (ajax.status === 200) {
         var div = document.createElement("div");
         div.style.display = 'none';
-        div.className = 'svg-in-the-dom';
+        div.className = 'dfds-svg-in-the-dom';
         div.innerHTML = ajax.responseText;
         document
           .body
@@ -18,13 +22,13 @@ _DFDS_.icons = (function () {
       }
       callback && callback(ajax);
     }
-    ajax.open("GET", path || "https://unpkg.com/@dfds-frontend/icons/main/icons.svg", true);
+    ajax.open("GET", path || "https://unpkg.com/@dfds-frontend/icons/iconMain/icons.svg", true);
     ajax.send();
   };
 
   try {
-    var css = 'dfds-main-icons-manual-load';
-    if (!document.body.classList.contains(css) && !document.documentElement.classList.contains(css)) {
+
+    if (!document.getElementById(id) && !document.body.classList.contains('dfds-main-icons-manual-load')) {
       load();
     }
   } catch(err) {}

@@ -1,10 +1,16 @@
 {
 	"name": "@dfds-frontend/icons",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Dfds icons",
 	"main": "index.js",
 	"files": [
-		"main"
+    "iconCore",
+    "iconMain",
+    "iconLink",
+    "iconPassenger",
+    "iconFreightLogistics",
+    "iconSocialMedia",
+    "iconFlag"
 	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",

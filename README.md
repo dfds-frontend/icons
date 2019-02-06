@@ -31,14 +31,14 @@ To load the icons manully apply this css class either to html or body element
 Then use this method after the `icons.js` has been loaded
 
 ```javascript
-_DFDS_.icons.load();
+_DFDS_.icons.main.load();
 ```
 
 You can specify a download path for the SVG file and a callback when SVG has been downloaded.
 
 ```javascript
-_DFDS_.icons.load({
-	path: "to-svg-file",
+_DFDS_.icons.main.load({
+	path: "url-path-to-svg-file",
 	callback: function(ajaxResult) {}
 });
 ```
