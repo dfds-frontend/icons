@@ -8,7 +8,7 @@ inlude this in html
 
 ```html
 <script
-  src="https://unpkg.com/@dfds-frontend/icons/main/icons.js">
+  src="https://unpkg.com/@dfds-frontend/icons/iconCore/icons.js">
 </script>
 ```
 
@@ -16,7 +16,7 @@ use the icons in the html
 
 ```html
 <svg fill="red" width="4rem" height="4rem">
-  <use xlink:href="#external-link"></use>
+  <use xlink:href="#icon-Burger-Menu"></use>
 </svg>
 ```
 
@@ -31,19 +31,19 @@ To load the icons manully apply this css class either to html or body element
 Then use this method after the `icons.js` has been loaded
 
 ```javascript
-_DFDS_.icons.main.load();
+_DFDS_.icons.core.load();
 ```
 
 You can specify a download path for the SVG file and a callback when SVG has been downloaded.
 
 ```javascript
-_DFDS_.icons.main.load({
+_DFDS_.icons.core.load({
 	path: "url-path-to-svg-file",
 	callback: function(ajaxResult) {}
 });
 ```
 
-## main icons from npm
+## icons from npm
 
 -   npm install @dfds-frontend/icons
 -   the files are in node_modules/@dfds-frontend/icons
@@ -52,7 +52,7 @@ inlude this in html
 
 ```html
 <script
-  src="node_modules/@dfds-frontend/icons/main/icons.js">
+  src="node_modules/@dfds-frontend/icons/iconCore/icons.js">
 </script>
 ```
 
