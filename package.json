@@ -11,9 +11,14 @@
     "start": "browser-sync -w",
     "clean": "rimraf dist/**",
     "copy": "node copy.js",
-    "build": "yarn clean && yarn copy",
-    "min-core": "svgo dist/core/icons.src.svg -o dist/core/icons.svg",
-    "min-freight": "svgo dist/freight-logistics/icons.src.svg -o dist/freight-logistics/icons.svg"
+    "build": "yarn clean && yarn copy && yarn min",
+    "min-core": "svgo dist/core/icons.svg",
+    "min-flags": "svgo dist/flags/icons.svg",
+    "min-freight": "svgo dist/freight-logistics/icons.svg",
+    "min-links": "svgo dist/links/icons.svg",
+    "min-passengers": "svgo dist/passengers/icons.svg",
+    "min-social-media": "svgo dist/social-media/icons.svg",
+    "min": "yarn min-core & yarn min-flags & yarn min-freight & yarn min-links & yarn min-passengers & yarn min-social-media"
   },
   "repository": {
     "type": "git",
