@@ -40,8 +40,12 @@ Legacy demo
 
 ### manual load
 
-To load the icons manully apply one of this css class toes html element
-`dfds-icons-manual-load` or `dfds-core-icons-manual-load`
+To load the icons manully for a specific icon set, like the core set, then apply this css class to the html element. `dfds-core-icons-manual-load`
+
+To load the icons manually for all types of icon set apply this css class to the html element. 
+`dfds-icons-manual-load`
+
+
 
 ```html
 <html class="dfds-icons-manual-load"></html>
