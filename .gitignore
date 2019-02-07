@@ -63,3 +63,6 @@ typings/
 
 .DS_Store
 .vs-code/
+dist/
+build/
+
