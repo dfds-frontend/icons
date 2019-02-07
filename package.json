@@ -1,27 +1,27 @@
 {
-	"name": "@dfds-frontend/icons",
-	"version": "0.0.6",
-	"description": "Dfds icons",
-	"main": "index.js",
-	"files": [
+  "name": "@dfds-frontend/icons",
+  "version": "0.0.7",
+  "description": "Dfds icons",
+  "main": "index.js",
+  "files": [
     "dist"
-	],
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "browser-sync start -s -f='*.*'"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dfds-frontend/icons.git"
-	},
-	"keywords": [
-		"svg",
-		"icons"
-	],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/dfds-frontend/icons/issues"
-	},
-	"homepage": "https://github.com/dfds-frontend/icons#readme"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start -s -f='*.*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfds-frontend/icons.git"
+  },
+  "keywords": [
+    "svg",
+    "icons"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfds-frontend/icons/issues"
+  },
+  "homepage": "https://github.com/dfds-frontend/icons#readme"
 }
