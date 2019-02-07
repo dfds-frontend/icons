@@ -73,11 +73,14 @@ icons.load();
 
 ## demo
 
-- https://codepen.io/kunukn/full/32d44d925a777a4e0d03887f57cbb410 Vanilla JS, core icons
-- https://codepen.io/kunukn/full/3284cab7dec4b27b92d895eb61cbbba6 Vanilla JS, all icons
-- https://codepen.io/kunukn/pen/c7080494f3fbd5b1c387353d81bebb36 Html
-- https://codesandbox.io/s/935w7p22xy Html
-- https://codesandbox.io/s/lp8oymr4xq React
+- https://codepen.io/kunukn/full/32d44d925a777a4e0d03887f57cbb410 core icons
+- https://codepen.io/kunukn/full/ba90afb38f953d31fe3f8918391fa554 freight logistics icons
+- https://codepen.io/kunukn/pen/a2256b33d1aeda62ca3cfca37374ae15 flags icons
+
+* https://codepen.io/kunukn/full/3284cab7dec4b27b92d895eb61cbbba6 all icons
+* https://codepen.io/kunukn/pen/c7080494f3fbd5b1c387353d81bebb36 Html
+* https://codesandbox.io/s/935w7p22xy Html
+* https://codesandbox.io/s/lp8oymr4xq React
 
 ## more
 
