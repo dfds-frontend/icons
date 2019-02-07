@@ -1,6 +1,6 @@
 {
   "name": "@dfds-frontend/icons",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Dfds icons",
   "main": "index.js",
   "files": [
@@ -8,7 +8,12 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start -s -f='*.*'"
+    "start": "browser-sync -w",
+    "clean": "rimraf dist/**",
+    "copy": "node copy.js",
+    "build": "yarn clean && yarn copy",
+    "min-core": "svgo dist/core/icons.src.svg -o dist/core/icons.svg",
+    "min-freight": "svgo dist/freight-logistics/icons.src.svg -o dist/freight-logistics/icons.svg"
   },
   "repository": {
     "type": "git",
@@ -23,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/dfds-frontend/icons/issues"
   },
-  "homepage": "https://github.com/dfds-frontend/icons#readme"
+  "homepage": "https://github.com/dfds-frontend/icons#readme",
+  "devDependencies": {
+    "copy-dir": "^0.4.0",
+    "rimraf": "^2.6.3"
+  }
 }

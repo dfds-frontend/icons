@@ -37,13 +37,13 @@
   </style>
 </head>
 
-<body class="dfds-main-icons-manual-load">
+<body class="dfds-icons-manual-load">
 
   <div class="root-icons"></div>
 
-  <script src="files/main/icons.js"></script>
+  <script src="dist/main/icons.js"></script>
   <script>
-    DFDS_icons.load({ callback });
+    DFDS_icons.main({ callback });
 
     function callback(ajax) {
       ajax.status === 200 &&
