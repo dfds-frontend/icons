@@ -11,14 +11,15 @@
     "start": "browser-sync -w",
     "clean": "rimraf dist/**",
     "copy": "node copy.js",
-    "build": "yarn clean && yarn copy && yarn min",
-    "min-core": "svgo dist/core/icons.svg",
-    "min-flags": "svgo dist/flags/icons.svg",
-    "min-freight": "svgo dist/freight-logistics/icons.svg",
-    "min-links": "svgo dist/links/icons.svg",
-    "min-passengers": "svgo dist/passengers/icons.svg",
-    "min-social-media": "svgo dist/social-media/icons.svg",
-    "min": "yarn min-core & yarn min-flags & yarn min-freight & yarn min-links & yarn min-passengers & yarn min-social-media"
+    "build": "yarn clean && yarn copy && yarn min-svg & yarn min-js",
+    "min-svg-core": "svgo dist/core/icons.svg",
+    "min-svg-flags": "svgo dist/flags/icons.svg",
+    "min-svg-freight": "svgo dist/freight-logistics/icons.svg",
+    "min-svg-links": "svgo dist/links/icons.svg",
+    "min-svg-passengers": "svgo dist/passengers/icons.svg",
+    "min-svg-social-media": "svgo dist/social-media/icons.svg",
+    "min-svg": "yarn min-svg-core & yarn min-svg-flags & yarn min-svg-freight & yarn min-svg-links & yarn min-svg-passengers & yarn min-svg-social-media",
+    "min-js": "node minifyjs.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
   "homepage": "https://github.com/dfds-frontend/icons#readme",
   "devDependencies": {
     "copy-dir": "^0.4.0",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "uglify-js": "^3.4.9"
   }
 }
