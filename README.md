@@ -4,6 +4,8 @@ Unofficial library for DFDS
 
 ## icons from CDN
 
+Version 1 January 2019
+
 ### Quick guide
 
 inlude this in html
@@ -22,11 +24,11 @@ use the icons in the html
 
 ## demo
 
-32x32 sized icons
+Mostly 32x32 dimension icons
 
 - https://codepen.io/kunukn/full/32d44d925a777a4e0d03887f57cbb410 core icons
 - https://codepen.io/kunukn/full/ba90afb38f953d31fe3f8918391fa554 freight logistic icons
-- https://codepen.io/kunukn/full/a2256b33d1aeda62ca3cfca37374ae15 flag icons
+- https://codepen.io/kunukn/full/a2256b33d1aeda62ca3cfca37374ae15 flag icons 40x32
 - https://codepen.io/kunukn/full/5c68493ce90b67546e2b95b6b5fd9229 link icons
 - https://codepen.io/kunukn/full/c15f797d9552a4d5b022c5ae4e87ea9a passenger icons
 - https://codepen.io/kunukn/full/041050033f722385fa77af940815377a social media icons
@@ -42,10 +44,8 @@ Legacy demo
 
 To load the icons manully for a specific icon set, like the core set, then apply this css class to the html element. `dfds-core-icons-manual-load`
 
-To load the icons manually for all types of icon set apply this css class to the html element. 
+To load the icons manually for all types of icon set apply this css class to the html element.
 `dfds-icons-manual-load`
-
-
 
 ```html
 <html class="dfds-icons-manual-load"></html>
