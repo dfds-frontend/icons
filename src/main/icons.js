@@ -28,9 +28,9 @@ _DFDS_.icons.main = (function () {
 
   try {
 
-    var css = 'dfds-main-manual-load';
+    var css = 'dfds-icons-manual-load';
     var html = document.documentElement;
-    if (!document.getElementById(id) && !(html.classList.contains('dfds-core-icons-manual-load') || html.classList.contains(css) )) {
+    if (!document.getElementById(id) && !(html.classList.contains('dfds-main-icons-manual-load') || html.classList.contains(css) )) {
       load();
     }
   } catch(err) {}

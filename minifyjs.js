@@ -3,7 +3,7 @@ var fs = require("fs");
 
 var options = {
     mangle: {
-        properties: true,
+        properties: false,
     },
     compress: {
         drop_console: true,
